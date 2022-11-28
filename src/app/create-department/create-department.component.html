@@ -1,0 +1,24 @@
+<div class="col-md-6 offset-md-3">
+
+    <h3>  Create Department Record</h3>
+    
+    <form (ngSubmit)="onSubmit()">
+
+        
+        <div class="form-group">
+            <label>Id</label>
+            <input type="number" class="form-control"  id="id"
+                [(ngModel)] = "department.id" name="id"   >
+        </div>
+    
+        <div class="form-group">
+            <label>Department Name</label>
+            <input type="text" class="form-control"  id="deptName"
+                [(ngModel)] = "department.deptName" name="deptName"   >
+        </div>
+       <br>
+            <button class="btn btn-success" type="submit">Submit</button>
+            <button class="btn1 btn" style="margin-left:10px ;" type="reset">Clear</button>
+    </form>
+    
+    </div>
